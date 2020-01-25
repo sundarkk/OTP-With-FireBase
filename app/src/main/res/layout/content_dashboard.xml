@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashboardActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="0dp">
+
+            <TextView
+                android:id="@+id/custom_id"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:hint="Customer ID"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="25dp"
+               android:text="Wallet"
+               android:layout_marginTop="20dp"
+               android:textSize="20dp"
+               android:layout_below="@+id/custom_id"/>
+
+            <TextView
+                android:id="@+id/profilenName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:textStyle="normal|bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:background="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="3"
+                android:background="#fff"
+                android:orientation="vertical"
+                android:rowCount="3">
+
+                <android.support.design.circularreveal.CircularRevealFrameLayout
+                    android:layout_width="100dp"
+                    android:layout_height="125dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="0"
+                    android:background="@null"
+                    android:layout_margin="10dp">
+
+                    <android.support.design.circularreveal.CircularRevealLinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            app:civ_border_color="@color/colorAccent"
+                            app:civ_border_width="1dp"
+                            android:layout_centerInParent="true"
+                            android:id="@+id/reward"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/rp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="REWARD POINT"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="33px"
+                            android:textStyle="normal|bold" />
+                    </android.support.design.circularreveal.CircularRevealLinearLayout>
+
+                </android.support.design.circularreveal.CircularRevealFrameLayout>
+
+                <android.support.design.circularreveal.CircularRevealFrameLayout
+                    android:layout_width="100dp"
+                    android:layout_height="125dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="0"
+                    android:background="@null"
+                    android:layout_margin="10dp">
+
+                    <android.support.design.circularreveal.CircularRevealLinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            app:civ_border_color="@color/colorAccent"
+                            app:civ_border_width="1dp"
+                            android:layout_centerInParent="true"
+                            android:id="@+id/food_order"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/forder" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ORDER FOOD"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="33px"
+                            android:textStyle="normal|bold" />
+                    </android.support.design.circularreveal.CircularRevealLinearLayout>
+
+                </android.support.design.circularreveal.CircularRevealFrameLayout>
+
+                <android.support.design.circularreveal.CircularRevealFrameLayout
+                    android:layout_width="100dp"
+                    android:layout_height="125dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="0"
+                    android:background="@null"
+                    android:layout_margin="10dp">
+
+                    <android.support.design.circularreveal.CircularRevealLinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            app:civ_border_color="@color/colorAccent"
+                            app:civ_border_width="1dp"
+                            android:layout_centerInParent="true"
+                            android:id="@+id/room_services"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/roomser" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Room Service"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="33px"
+                            android:textStyle="normal|bold" />
+                    </android.support.design.circularreveal.CircularRevealLinearLayout>
+
+                </android.support.design.circularreveal.CircularRevealFrameLayout>
+
+                <android.support.design.circularreveal.CircularRevealFrameLayout
+                    android:layout_width="100dp"
+                    android:layout_height="125dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="0"
+                    android:background="@null"
+                    android:layout_margin="10dp">
+
+                    <android.support.design.circularreveal.CircularRevealLinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            app:civ_border_color="@color/colorAccent"
+                            app:civ_border_width="1dp"
+                            android:layout_centerInParent="true"
+                            android:id="@+id/spa"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/spa" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SPA"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="33px"
+                            android:textStyle="normal|bold" />
+                    </android.support.design.circularreveal.CircularRevealLinearLayout>
+
+                </android.support.design.circularreveal.CircularRevealFrameLayout>
+                <android.support.design.circularreveal.CircularRevealFrameLayout
+                    android:layout_width="100dp"
+                    android:layout_height="125dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="0"
+                    android:background="@null"
+                    android:layout_margin="10dp">
+
+                    <android.support.design.circularreveal.CircularRevealLinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            app:civ_border_color="@color/colorAccent"
+                            app:civ_border_width="1dp"
+                            android:layout_centerInParent="true"
+                            android:id="@+id/hire_cab"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/cab" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="HIRE CAB"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="33px"
+                            android:textStyle="normal|bold" />
+                    </android.support.design.circularreveal.CircularRevealLinearLayout>
+
+                </android.support.design.circularreveal.CircularRevealFrameLayout>
+
+                <android.support.design.circularreveal.CircularRevealFrameLayout
+                    android:layout_width="100dp"
+                    android:layout_height="125dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="0"
+                    android:background="@null"
+                    android:layout_margin="10dp"/>
+
+                   <!-- <android.support.design.circularreveal.CircularRevealLinearLayout
+                        android:id="@+id/gallery"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            app:civ_border_color="@color/colorAccent"
+                            app:civ_border_width="1dp"
+                            android:layout_centerInParent="true"
+                            android:id="@+id/g"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/food" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Gallery"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp"
+                            android:textStyle="normal|bold" />
+                    </android.support.design.circularreveal.CircularRevealLinearLayout>
+
+                </android.support.design.circularreveal.CircularRevealFrameLayout>-->
+                <android.support.design.circularreveal.CircularRevealFrameLayout
+                    android:layout_width="100dp"
+                    android:layout_height="125dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="0"
+                    android:background="@null"
+                    android:layout_margin="10dp">
+
+                    <android.support.design.circularreveal.CircularRevealLinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            app:civ_border_color="@color/colorAccent"
+                            app:civ_border_width="1dp"
+                            android:layout_centerInParent="true"
+                            android:id="@+id/bar"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/bar" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="BAR"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="33px"
+                            android:textStyle="normal|bold" />
+                    </android.support.design.circularreveal.CircularRevealLinearLayout>
+
+                </android.support.design.circularreveal.CircularRevealFrameLayout>
+                <android.support.design.circularreveal.CircularRevealFrameLayout
+                    android:layout_width="100dp"
+                    android:layout_height="125dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="0"
+                    android:background="@null"
+                    android:layout_margin="10dp">
+
+                    <android.support.design.circularreveal.CircularRevealLinearLayout
+                        android:id="@+id/gallery"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            app:civ_border_color="@color/colorAccent"
+                            app:civ_border_width="1dp"
+                            android:layout_centerInParent="true"
+                            android:id="@+id/cab"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/guid" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="HIRE GUIDE"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="33px"
+                            android:textStyle="normal|bold" />
+                    </android.support.design.circularreveal.CircularRevealLinearLayout>
+
+                </android.support.design.circularreveal.CircularRevealFrameLayout>
+               <!-- <android.support.design.circularreveal.CircularRevealFrameLayout
+                    android:layout_width="100dp"
+                    android:layout_height="125dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="0"
+                    android:background="@null"
+                    android:layout_margin="10dp">
+
+                    <android.support.design.circularreveal.CircularRevealLinearLayout
+                        android:id="@+id/gallery"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            app:civ_border_color="@color/colorAccent"
+                            app:civ_border_width="1dp"
+                            android:layout_centerInParent="true"
+                            android:id="@+id/g"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/food" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Gallery"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp"
+                            android:textStyle="normal|bold" />
+                    </android.support.design.circularreveal.CircularRevealLinearLayout>
+
+                </android.support.design.circularreveal.CircularRevealFrameLayout>-->
+            </GridLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
